@@ -7,7 +7,7 @@ pkgs.mkShell {
     python313
     uv
     gcc
-    ffmpeg_4
+    ffmpeg
     pkg-config
     zlib
   ];
@@ -17,7 +17,7 @@ pkgs.mkShell {
       pkgs.lib.makeLibraryPath (
         with pkgs;
         [
-          ffmpeg_4
+          ffmpeg
           stdenv.cc.cc.lib
           zlib
         ]
